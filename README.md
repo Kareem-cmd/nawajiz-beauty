@@ -20,4 +20,3 @@ Products and labels: `app.js`. Layout: `index.html`. Design and responsive rules
 
 ## Asset provenance
 Logo, category icons and four campaign banners supplied by the project owner. WebP derivatives are optimized for web delivery. `assets/products.webp` is an AI-generated fictional product contact sheet, generated with the built-in image generation tool; see `ASSET-PROMPT.md`. No third-party product names or reviews are claimed.
-
