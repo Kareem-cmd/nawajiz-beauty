@@ -9,3 +9,16 @@
 .ritual{grid-template-columns:1fr;min-height:0}.ritual-copy{padding:36px 42px}.ritual-copy h2 br{display:none}.ritual-photo{height:auto}.ritual-photo img{height:auto;object-fit:contain;object-position:center}.ritual-photo:hover img{transform:none}
 @media(max-width:760px){.ritual-copy{padding:28px}.ritual-copy h2 br{display:block}.ritual-photo{height:auto}.ritual-photo img{height:auto}}
 h1,h2{text-wrap:balance}
+/* Airy campaign composition: no oversized panel or hard seam above artwork. */
+.ritual{background:transparent;overflow:visible;gap:24px;border-radius:0}
+.ritual-copy{padding:0;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:32px;align-items:center}
+.ritual-copy .line-flower{display:none}.ritual-copy h2{font-size:32px;grid-column:1;grid-row:1}.ritual-copy h2 br{display:none}
+.ritual-copy p{grid-column:1;grid-row:2;margin:10px 0 0}.ritual-copy>.button{grid-column:2;grid-row:1 / 3;justify-self:end}
+.ritual-photo{border-radius:16px;overflow:hidden}.ritual-photo img{display:block;width:100%;height:auto}
+.button,.add-button,.icon-button{transition:background .25s,color .25s,transform .3s var(--ease)}
+.button:active,.add-button:active,.icon-button:active{transform:scale(.96)}
+.add-button:hover{transform:translateY(-2px)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.product-visual{transition:transform .5s var(--ease),box-shadow .5s var(--ease)}.product-card:hover .product-visual{transform:translateY(-4px);box-shadow:0 12px 24px #0f253a0a}.button:hover svg{transform:translateX(-3px)}.button svg{transition:transform .35s var(--ease)}}
+@media(max-width:760px){.ritual{gap:18px}.ritual-copy{display:flex;flex-direction:column;align-items:flex-start;gap:0}.ritual-copy h2{font-size:28px}.ritual-copy p{margin:10px 0 18px}.ritual-copy>.button{align-self:flex-start}.ritual-photo{border-radius:10px}}
+@media(prefers-reduced-motion:reduce){.button:active,.add-button:active,.icon-button:active,.add-button:hover{transform:none}}
+
