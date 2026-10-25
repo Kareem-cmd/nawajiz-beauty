@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T22:46:53.3137194Z",
+  "title": "Design System: Nawajiz Beauty",
+  "extensions": {
+    "colorMeta": {
+      "orange": {
+        "role": "primary",
+        "displayName": "Brand orange"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy ink"
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Ivory canvas"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Arabic display",
+        "purpose": "Intro headline."
+      },
+      "brand-label": {
+        "displayName": "Latin brand label",
+        "purpose": "Small uppercase Latin product metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 20px 80px #0f253a26",
+        "purpose": "Modal surfaces."
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 24px #0f253a1a",
+        "purpose": "Transient feedback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Photography and entrance easing."
+      },
+      {
+        "name": "dialog-in",
+        "value": ".35s",
+        "purpose": "Fade and 14px upward entrance."
+      },
+      {
+        "name": "drawer-in",
+        "value": ".45s",
+        "purpose": "Left-side drawer entrance from translateX(-100%)."
+      },
+      {
+        "name": "product-photo",
+        "value": ".65s",
+        "purpose": "Hover scale to 1.055."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none!important;transition:none!important",
+        "purpose": "Applied to all elements and pseudo-elements under prefers-reduced-motion:reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Navy action with gentle lift and visible focus.",
+      "html": "<button class=\"primary-demo\" dir=\"rtl\">اكتشفي المنتجات</button>",
+      "css": ".primary-demo{font:14px Tajawal,sans-serif;background:var(--ink,#0f253a);color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:14px;border:0;border-radius:6px;padding:13px 23px;min-height:48px;cursor:pointer;transition:background .25s,transform .3s var(--ease,cubic-bezier(.22,1,.36,1))}.primary-demo:hover{background:#243e51;transform:translateY(-2px)}.primary-demo:focus-visible{outline:2px solid var(--orange-dark,#a4480c);outline-offset:5px}.primary-demo:disabled{opacity:.4;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.primary-demo{transition:none}}"
+    },
+    {
+      "name": "Selected catalog filter",
+      "kind": "chip",
+      "refersTo": "tab-selected",
+      "description": "Pill filter with pressed state.",
+      "html": "<button class=\"filter-demo\" aria-pressed=\"true\" dir=\"rtl\">الكل</button>",
+      "css": ".filter-demo{font:13px Tajawal,sans-serif;padding:9px 18px;border:0;border-radius:30px;cursor:pointer;background:var(--ink,#0f253a);color:#fff;transition:background .25s,color .25s}.filter-demo:hover{background:var(--surface,#f3efe9)}.filter-demo:focus-visible{outline:2px solid var(--orange-dark,#a4480c);outline-offset:5px}@media(prefers-reduced-motion:reduce){.filter-demo{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "overview": "Source-derived soft Arabic beauty storefront using the supplied orange/navy identity, ivory canvas, spacious photography, rounded images, and gentle feedback. No new qualitative preferences or creative metaphor were asserted.",
+    "keyCharacteristics": [
+      "Arabic RTL",
+      "Restrained orange accents",
+      "Navy type and actions",
+      "Flat product presentation",
+      "Rounded campaign imagery"
+    ],
+    "rules": [
+      {
+        "name": "The Identity Rule",
+        "body": "Keep supplied campaign artwork intact and use page palette around it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Campaign Legibility Rule",
+        "body": "Preserve full mobile hero and wide-banner proportions; the editorial campaign stays single-column with intact imagery at every breakpoint.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do preserve RTL, accessible labels, and visible focus.",
+      "Do keep campaign lettering legible.",
+      "Do distinguish demonstration content."
+    ],
+    "donts": [
+      "Don't add card shadows absent from the implemented system.",
+      "Don't invent reviews, certifications, or real-order promises."
+    ]
+  }
+}
